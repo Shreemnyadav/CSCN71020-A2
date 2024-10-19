@@ -83,7 +83,7 @@ void setWidth(int input, int *width) {
 }
 
 int getPerimeter(int *length, int *width) {
-	int perimeter = *length + *length + *width;
+	int perimeter = 2 * (*length + *width);
 	return perimeter;
 }
 
@@ -107,3 +107,9 @@ void printOptions() {
 	printf("5. Get Rectangle Area\n");
 	printf("6. Exit\n");
 }
+
+/*int l = 5; int w = 2;
+			
+
+			extern "C"  int getPerimeter(int* length, int* width);
+*/
